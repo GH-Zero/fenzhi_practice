@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // instanceof 判断一个对象是否是某个构造函数的实例
+
+        // 对象 instanceof 构造函数名
+        // 1）如果“对象”是构造函数的实例   返回值是true
+        // 2）如果“对象”不是构造函数的实例   返回值是false
+
+        // var arr = [1, 2, 3];
+        // var arr = new Array(1, 2, 3)
+        // 数组都是Array构造函数创建出来的实例
+
+        // var fn = function (demo) {
+        //     console.log(123 + demo);
+        // }
+        // var fn = new Function("demo"," console.log(123 + demo)")
+        // 函数都是Function构造函数创建出来的实例
+
+        // var obj = {};
+        // var obj = new Object();
+        // 对象都是Object构造函数创建出来的实例
+
+
+        // 数组 instanceof Array  得到的都是true
+        // 函数 instanceog Function  得到的都是true
+        // 对象 instanceog Object  得到的都是true
+        // 可以通过以上方式判断一个数据是否是数组、函数、对象
+
+
+        // 注意：所有的数组、函数  都是对象
+        // 数组 instanceof  Object   得到的是true
+        // 函数 instanceof  Object   得到的是true
+        // 对象 instanceof  Object   得到的是true
+
+        var fn = function(){
+
+        };
+        console.log(fn instanceof Object);
+
+    </script>
+</body>
+
+</html>

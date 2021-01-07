@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // var reg = /^[ab][ab]$/;
+        // // 必须是 aa  bb ab ba
+        // console.log(reg.test("ab"));//true
+        // console.log(reg.test("ba"));//true
+        // console.log(reg.test("bb"));//true
+        // console.log(reg.test("aa"));//true
+        // console.log(reg.test("abca"));//false
+
+        // 6个非数字的字符
+        var reg = /^[^0-9][^0-9][^0-9][^0-9][^0-9][^0-9]$/;
+        // var reg = /^[^0-9]{6}$/;
+        console.log(reg.test("abcdef"));//true
+
+    </script>
+</body>
+
+</html>

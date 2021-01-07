@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var reg1 = /^a|b$/;
+        // 要么是a  要么是b  （错误）
+        // 要么以a为开头  要么以b为结尾  （正确）
+        // console.log( reg1.test("ab") );
+        // console.log( reg1.test("ac") );
+        // console.log( reg1.test("cb") );
+
+
+        var reg2 = /^(a|b)$/;
+        // 要么是a  要么是b
+        // console.log(reg2.test("ab"));
+
+        var reg3 = /^a|b|c$/;
+        // 要么以a为开头  要么以c为结尾  要么包含b
+        console.log(reg3.test("aefghidg"));
+        console.log(reg3.test("1231323b687688"));
+        console.log(reg3.test("1231323687688c"));
+
+
+    </script>
+</body>
+
+</html>

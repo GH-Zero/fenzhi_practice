@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 精确匹配：必须要一模一样
+        // // 1) 要求只有一个字符：[]表示一个字符
+        // // 2) 这个字符可以是a、b、c、d
+        // var reg = /^[abcd]$/
+        // console.log(reg.test("d"));
+    </script>
+    <script>
+        // 量词：指定字符出现的次数
+
+        // 例如：6个非数字的字符
+        // var reg = /^[^0-9]{6}$/;
+        // console.log(reg.test("1bcdef"));
+
+        var reg = /^ab{3}$/
+        // 以上规则中  不是让ab出现3次   而是让b出现3次
+        // 量词仅修饰前面紧挨着的一部分字符
+
+        var reg = /^(ab){3}$/
+
+        console.log( reg.test("ababab") );
+        console.log( reg.test("abbb") );
+
+        // 预定义类
+    </script>
+</body>
+</html>
